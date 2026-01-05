@@ -21,8 +21,11 @@ body {
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-items: center;
   gap: 20px;
   padding: 20px;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 /* Each individual card */
@@ -35,6 +38,9 @@ body {
   width: 250px; /* Fixed card width */
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .card:hover {
@@ -44,7 +50,7 @@ body {
 
 .card img {
   width: 100%;
-  height: auto;
+  height: 180px;
   border-radius: 8px;
   margin-bottom: 10px;
 }
